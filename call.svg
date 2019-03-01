@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>call</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="call">
+            <circle id="Oval" fill="#5359E7" cx="256" cy="256" r="256"></circle>
+            <g transform="translate(111.000000, 112.000000)" fill="#FFFFFF" fill-rule="nonzero" id="Shape">
+                <path d="M287.719,229.594 L286.281,225.219 C282.906,215.157 271.781,204.657 261.531,201.844 L223.688,191.5 C213.438,188.719 198.813,192.469 191.283,200 L177.595,213.688 C127.845,200.219 88.814,161.188 75.376,111.438 L89.064,97.75 C96.564,90.25 100.314,75.625 97.533,65.344 L87.219,27.5 C84.438,17.25 73.875,6.125 63.813,2.75 L59.5,1.312 C49.406,-2.063 35,1.343 27.5,8.875 L7,29.375 C3.344,33 1,43.406 1,43.438 C0.312,108.501 25.813,171.157 71.813,217.188 C117.688,263.063 180.126,288.533 244.969,287.969 C245.313,287.969 256.032,285.688 259.688,282.031 L280.188,261.531 C287.688,254.062 291.062,239.656 287.719,229.594 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

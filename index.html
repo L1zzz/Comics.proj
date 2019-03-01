@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Comicsverse</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,800" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+	<div class="loaderArea">
+    	<div class="loader pulse"></div>
+	</div>
+	<script>
+  $(window).on('load', function () {
+    $preloader = $('.loaderArea'),
+      $loader = $preloader.find('.loader');
+    $loader.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+
+if(window.innerWidth > 700){
+	    $('.main_content').attr("class","main_content zoomIn")
+    $(window).scroll(function() {
+    if ($(this).scrollTop() > 400) {
+     $('.advantage').attr("class","advantage slideInRight")
+    }
+     if ($(this).scrollTop() > 1600) {
+     $('.get_tech').attr("class","get_tech slideInUp")
+   }
+    if ($(this).scrollTop() > 2300) {
+     $('.technic_photo').attr("class","technic_photo slideInUp")
+   }
+    if ($(this).scrollTop() > 2600) {
+     $('.review').attr("class","review slideInUp")
+   }
+})
+}
+
+});
+
+</script>
+	<header>
+		<div class="wrapper">
+			<div class="row" id="hiddenhead">
+				<div class="header_logo"><img src="img/logo1.png"></div>
+					<div class="burger">
+                        <div class="burger_circle">
+                        <span></span>
+                        </div>
+                    </div>
+			</div>
+			<div class="row" id="bighead">
+				<div class="header_logo"><img src="img/logo.png"></div>
+				<div class="header_center">
+					<ul class="flex">
+						<li onclick='$("html,body").animate({scrollTop: $(".get_tech").offset().top}, 500)'>Просчитать стоимость</li>
+						<li onclick='$("html,body").animate({scrollTop: $(".howwe").offset().top}, 500)'>Как мы работаем</li>
+						<li onclick='$("html,body").animate({scrollTop: $(".contacts").offset().top}, 500)'>Контакты</li>
+					</ul>
+				</div>
+				<div class="header_right">
+					<div class="flex addres"><i class="fas fa-map-marker-alt"></i><p id="header_city_down">76487 г. Киев<br>ул. Соборная, 3</p><p id="header_city">76487 г. Киев <br>ул. Соборная, 3</p></div>
+					<div class="flex number"><i class="fas fa-mobile-alt"></i><p id="header_numb_down"><span>+380 00 000 00 00</span><br><span>+380 00 000 00 00</span><br><span>+380 00 000 00 00</span></p><p id="header_numb">+380 00 000 00 00<br>+380 00 000 00 00<br>+380 00 000 00 00</p></div>
+				</div>
+					
+			</div>
+		</div>
+	</header>	
+	<div class="mobile-menu ">
+            <div class="menu_list_mobile">
+						<li onclick='$("html,body").animate({scrollTop: $(".get_tech").offset().top}, 500)'>Просчитать стоимость</li>
+						<li onclick='$("html,body").animate({scrollTop: $(".howwe").offset().top}, 500)'>Как мы работаем</li>
+						<li onclick='$("html,body").animate({scrollTop: $(".contacts").offset().top}, 500)'>Контакты</li>
+            </div>
+            <div class="contacts_header">
+            			<a href="">76487 г. Киев ул. Соборная, 3</a>
+                        <a href="">+380 00 000 00 00</a>
+                        <a href="">+380 00 000 00 00</a>
+                        <a href="">+380 00 000 00 00</a>
+                    </div>
+        </div>
+	<div class="main zoomIn">
+        <video width="100%" height="100vh" controls autoplay="autoplay" muted loop>
+            <source src="img/comixx.mp4" type="video/mp4">
+        </video>
+		<div class="main_back" style="    position: absolute;top: 0;">
+		<div class="wrapper">
+			<div class="social_right">
+				<div><a class='linkhed' href="#">Присоединиться к Facebook&nbsp;&nbsp;</a><a class='sss' href='#' target="_blank"><i class="fab fa-facebook-f"></i></a></div>
+				<div><a class='linkhed' href="#">Присоединиться к Youtube&nbsp;&nbsp;</a><a class='sss' href='#' target="_blank"><i class="fab fa-youtube"></i></a></div>
+				<div><a class='linkhed' href="#">Присоединиться к Viber&nbsp;&nbsp;</a><a class='sss' href="#" target="_blank"><i class="fab fa-viber"></i></a></div>
+			</div>
+			<div class="content-head">
+			<div class="main_content">
+				<h2>Комиксы на любой вкус</h2>
+				<p>Marvel, DC Comics, Dark Horse Comics, Image Comics и другие<br> в <span>любую точку Украины</span></p>
+				<div class="row">
+					<div><div class="button_green" onclick='$("html,body").animate({scrollTop: $(".get_tech").offset().top}, 500)'>Просчитать стоимость</div></div>
+					<div><div class="button_white" id="openpop1">Бесплатная консультация</div></div>
+				</div>
+				<div class="hiddencontacts_main"><h2>Присоединиться</h2>
+					<div class="flex"><a class="sss" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+									  <a class="sss" href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+									  <a class="sss" href="#" target="_blank"><i class="fab fa-viber"></i>
+									  </a>
+					</div></div>
+			</div></div>
+			</div>
+		</div>
+	</div>
+	<div class="advantage">
+		<div class="wrapper">
+			<h2>Преимущества Приобретения Комиксов У Нас</h2>
+			<div class="flex">
+				<div class="adv_item">
+					<div class="adv_wrap">
+					<div class="flex"><img src="img/european-union.png"><h3>Выбор</h3></div>
+					<p>Lorem ipsum dolor sit amet, consectetur</p>
+				</div></div>
+				<div class="adv_item">
+					<div class="adv_wrap">
+					<div class="flex"><img src="img/качество.png"><h3>Качество</h3></div>
+					<p>Lorem ipsum dolor sit amet, consectetur</p>
+				</div></div>
+				<div class="adv_item">
+					<div class="adv_wrap">
+					<div class="flex"><img src="img/надежность.png"><h3>Надежность</h3></div>
+					<p>Lorem ipsum<br>dolor sit amet, consectetur</p>
+				</div></div>
+				<div class="adv_item">
+					<div class="adv_wrap">
+					<div class="flex"><img src="img/время.png"><h3>Время</h3></div>
+					<p>Lorem ipsum<br>dolor sit amet, consectetur</p>
+				</div></div>
+				<div class="adv_item">
+					<div class="adv_wrap">
+					<div class="flex"><img src="img/стоимость.png"><h3>Стоимость</h3></div>
+					<p>Lorem ipsum <br>dolor sit amet, consectetur</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class="howwe">
+		<div class="main_back">		
+			<div class="wrapper">
+				<h2>Механизм работы</h2>
+				<p style="width: 100%; text-align:center;margin:0 0 30px 0;">Нажмите, что бы узнать подробнее</p>
+				<div class="time-line">
+	<div class="time-line__item">
+		<div class="time-line__item-text">
+			Подбор комиксов на ваш вкус 
+		</div>
+		<div class="time-line__item-image" onclick="window.open('#');">
+			<img src="img/inspection.png" alt="">
+		</div>
+	</div>
+	<div class="time-line__item">
+		<div class="time-line__item-text">
+			Выбор удобного Вам вида доставки
+		</div>
+		<div class="time-line__item-image" onclick="window.open('#');">
+			<img src="img/2.png" alt="">
+		</div>
+	</div>
+	<div class="time-line__item">
+		<div class="time-line__item-text">
+			Оформление заказа
+		</div>
+		<div class="time-line__item-image" onclick="window.open('#');">
+			<img src="img/3.png" alt="">
+		</div>
+	</div>
+	<div class="time-line__item">
+		<div class="time-line__item-text">
+			Доставка комиксов
+		</div>
+		<div class="time-line__item-image" onclick="window.open('#');">
+			<img src="img/7.png" alt="">
+		</div>
+	</div>
+</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="get_tech">
+		<div class="wrapper">
+			<h2>Рассчитать стоимость заказа</h2>
+			 <form>
+		<p><label>Комиксы</label>
+			<select class='types'>
+				<option>Выберите издательство</option>
+				<option>Marvel</option>
+				<option>DC Comics</option>
+				<option>Dark Horse Comics</option>
+				<option>Image Comics</option>
+			</select></p>
+        <p><label>Вид комикса</label><input type="text" class='model' /></p>
+         <p class="range-slider"><label>Год выпуска</label>
+  <input class="range-slider__range year" type="range" value="2018" min="1990" max="2018">
+  <span class="range-slider__value test">0</span></p>
+          <p><label>Цена в Мире $</label><input type="text" class="price"/></p>
+          <p><label>Страна покупки</label><input type="text" class="country"/></p>
+		<p><label>Доставка в</label>
+			<select class="delivery">
+				<option>Выберите область</option>
+				<option>Винницкую область</option>
+				<option>Волынскую область</option>
+				<option>Днепропетровскую область</option>
+				<option>Донецкую область</option>
+				<option>Житомирскую область</option>
+				<option>Закарпатскую область</option>
+				<option>Запорожскую область</option>
+				<option>Ивано-Франковскую область</option>
+				<option>Киевскую область</option>
+				<option>Кировоградскую область</option>
+				<option>Луганскую область</option>
+				<option>Львовскую область</option>
+				<option>Николаевскую область</option>
+				<option>Одесскую область</option>
+				<option>Полтавскую область</option>
+				<option>Ровенскую область</option>
+				<option>Сумскую область</option>
+				<option>Тернопольскую область</option>
+				<option>Харьковскую область</option>
+				<option>Херсонскую область</option>
+				<option>Хмельницкую область</option>
+				<option>Черкасскую область</option>
+				<option>Черниговскую область</option>
+				<option>Черновицкую область</option>
+			</select></p>
+	<input type="hidden" class='vanya'>
+		<div class="button_green calculate">Просчитать стоимость</div>
+		</form>
+		<script>
+
+			$(document).ready(()=>{
+							$('.calculate').click(()=>{
+								$('.pop1').append("<input name='equipment' type='hidden' value='"+$('.equipment').val()+"'>")
+								$('.pop1').append("<input name='model' type='hidden' value='"+$('.model').val()+"'>")
+								$('.pop1').append("<input name='year' type='hidden' value='"+$('.test').text()+"'>")
+								$('.pop1').append("<input name='price' type='hidden' value='"+$('.price').val()+"'>")
+								$('.pop1').append("<input name='country' type='hidden' value='"+$('.country').val()+"'>")
+								$('.pop1').append("<input name='delivery' type='hidden' value='"+$('.delivery').val()+"'>")
+								$('.type').attr("value","calculate")
+							  	$(".popup").show();
+							})
+						})
+					</script>
+		</div>
+	</div>
+	<div class="comix_photo">
+		<div class="wrapper">
+			<h2>Фавориты наших покупателей </h2>
+			<br>
+			<div class="flex">
+				<div class="comix_photo_item">
+                    <div class="cont_tech">
+                        <div class="gallery">
+                            <img src="img/8.jpg" alt="" width="200px" height="300px">
+                        </div> <span class="tech_desc">Akira</span>
+                    </div>
+                </div>
+
+                <div class="comix_photo_item">
+                    <div class="cont_tech">
+                        <div class="gallery">
+                            <img src="img/2.jpg" alt="" width="200px" height="300px">
+                        </div> <span class="tech_desc">Calvin and Hobbes</span>
+                    </div>
+                </div>
+
+                <div class="comix_photo_item">
+                    <div class="cont_tech">
+                        <div class="gallery">
+                            <img src="img/3.jpg" alt="" width="200px" height="300px">
+                        </div> <span class="tech_desc">The Sandman</span>
+                    </div>
+                </div>
+
+                <div class="comix_photo_item">
+                    <div class="cont_tech">
+                        <div class="gallery">
+                            <img src="img/98.jpg" alt="" width="200px" height="300px">
+                        </div> <span class="tech_desc">Bone</span>
+                    </div>
+                </div>
+		</div>
+	</div>
+	
+	<div class="contacts">
+		<div class="flex">
+		<div class="contacts_left" ><div class="wrapper">
+			<h3>Наши контакты</h3>
+			<img src="img/001-smartphone-call.png">
+			<p class="test3">+380 00 000 00<br>+380 00 000 00<br>+380 00 000 00</p>
+			<img src="img/local1.png">
+			<p>76487 г. Киев<br>ул. Coборная, 3</p>
+			<img src="img/email.png">
+			<p>0000@ukr.net</p>
+			<br>
+			<div class="flex cont">
+				<a href="#" target="_blank"><img src="img/fb.png"></a>
+				<a href="#" target="_blank"><img src="img/youtube.png"></a>
+				<a href="#" target="_blank"><img src="img/Слой-4-копия.png"></a>
+			</div>
+
+		</div></div>
+		<div class="contacts_right" ><iframe class='map' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5085.457990906495!2d30.357869000000004!3d50.408888!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cbbaf6145629%3A0x252d2be48ec4c8e2!2z0YPQuy4g0KHQvtCx0L7RgNC90LDRjywg0KHQvtGE0LjQtdCy0YHQutCw0Y8g0JHQvtGA0YnQsNCz0L7QstC60LAsINCa0LjQtdCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1551396019997"  style="width:100%;" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+	</div>
+	</div>
+
+	<style>
+		.call{
+			display:none;
+			position:fixed;
+			bottom:5%;
+			right:3%;
+		}
+
+
+		.pulse{
+    animation-name: pulse;
+    -webkit-animation-name: pulse;  
+ 
+    animation-duration: 1.5s;   
+    -webkit-animation-duration: 1.5s;
+ 
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+ 
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        opacity: 0.7;       
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1; 
+    }   
+    100% {
+        transform: scale(0.9);
+        opacity: 0.7;   
+    }           
+}
+ 
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(0.95);
+        opacity: 0.7;       
+    }
+    50% {
+        -webkit-transform: scale(1);
+        opacity: 1; 
+    }   
+    100% {
+        -webkit-transform: scale(0.95);
+        opacity: 0.7;   
+    }           
+}
+
+@media (max-width: 800px) {
+	.call {
+		display:block;
+	}
+}
+
+	</style>
+	<div class="call">
+		<a id="callback" href="tel:+380667144773"><img class="pulse" width="60" height="60" src="../call.svg" alt=""></a>
+	</div>
+		<div class="popup">
+		<div class="back_popup"></div>
+			<div class="popup_cont">
+				<div class="wrapper">
+					<h2>Мы свяжемся с вами в течении <span>7</span> минут</h2>
+					<form class='pop1' onsubmit='return false'>
+						<input type="text" name='name' class='name' placeholder="Ваше Имя">
+						<input type="text"  name='phone' class='phone' placeholder="Ваш Телефон">
+						<input type="hidden" class='type' name='type' value='order'>
+						<div class="button_green send">Просчитать стоимость</div>
+						<div class="result"></div>
+					</form>
+					<script>
+						$(document).ready(()=>{
+							$('.send').click(()=>{
+								$.ajax({
+								  type: "POST",
+								  url: "sendmail.php",
+								  data: $('.pop1').serialize(),
+								  success: (data)=>{
+								    $('.result').html(data)
+								  }
+								});
+							})
+						})
+					</script>
+			</div>
+		</div>
+	</div>
+
+
+		<div class="popup1">
+		<div class="back_popup"></div>
+			<div class="popup_cont">
+				<div class="wrapper">
+					<h2>Мы свяжемся с вами в течении <span>7</span> минут</h2>
+					<form class='pop' onsubmit='return false'>
+						<input type="text" name='name' class='name' placeholder="Ваше Имя">
+						<input type="text"  name='phone' class='phone' placeholder="Ваш Телефон">
+						<input type="hidden" class='type' name='type' value='order'>
+						<div class="button_green send">Получить</div>
+						<div class="result"></div>
+					</form>
+					<script>
+						$(document).ready(()=>{
+							$('.send').click(()=>{
+								$.ajax({
+								  type: "POST",
+								  url: "sendmail.php",
+								  data: $('.pop').serialize(),
+								  success: (data)=>{
+								    $('.result').html(data)
+								  }
+								});
+							})
+						})
+					</script>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>
